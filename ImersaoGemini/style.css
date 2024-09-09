@@ -1,11 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-body{
+body {
   font-family: "Roboto";
   background-color: #fcf8f8;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
-h1{
-  color: #353636;
+h2{
+  color: #000000;
+}
+a{
+  color: #000000;
+}
+.descricao {
+  background-color: #2b2139;
+  color: #b9acca;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.container-slide {
+  max-width: 800px; 
+  margin: 0 auto;
+  position: relative;
+}
+
+.slide {
+  text-align: center;
+  padding: 50px;
+}
+
+.slide img {
+  max-width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
+
+.anterior, .proximo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+  user-select: none;
+}
+
+.anterior {
+  left: 20px;
+}
+
+.proximo {
+  right: 20px;
+}
+
+/* Efeito de transição */
+.fade {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.active {
+  opacity: 1;
 }
